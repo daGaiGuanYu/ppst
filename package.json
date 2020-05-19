@@ -1,0 +1,22 @@
+{
+  "name": "ppst",
+  "version": "1.1.0",
+  "description": "如果你连复制粘贴都懒得做，那么你该试试 ppst-cli",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daGaiGuanYu/nj.git"
+  },
+  "bin": {
+    "ppst": "src/index.js"
+  },
+  "author": "gy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daGaiGuanYu/nj/issues"
+  },
+  "homepage": "https://github.com/daGaiGuanYu/nj#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
