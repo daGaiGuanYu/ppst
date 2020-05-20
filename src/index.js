@@ -8,8 +8,11 @@ const str = {
 const directiveMap = {
   ls: require('./ls'),
   add: require('./add'),
-  adds: require('./adds')
+  adds: require('./adds'),
+  p: require('./p'),
+  delete: require('./delete')
 }
+
 function go(){
   let directive = process.argv[2]
   if(!directive){

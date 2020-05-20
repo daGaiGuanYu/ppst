@@ -1,8 +1,8 @@
-const getAll = require('./service/get')
+const { read } = require('./service/ppst.io')
 
 module.exports = function(){
   const namespace = process.argv[3] || ''
-  let all = getAll()
+  let all = read()
   
   const keys = namespace.split('.')
   let k
