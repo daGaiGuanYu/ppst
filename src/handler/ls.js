@@ -14,5 +14,5 @@ module.exports = function(){
     else
       throw Error('未找到' + namespace)
   }
-  console.log(all)
+  console.log(all.data)
 }
