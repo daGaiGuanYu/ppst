@@ -36,9 +36,12 @@ ppst p 百度首页的html文件
 这样，百度首页的html文件就会下载到**当前目录**下
 
 ##### 一些问题
-> Q：被保存的文件只能只用 http 连接吗？  
+> Q：被保存的文件只能用 http 链接吗？  
 > A：是的
 
 > Q：我的文件在本地，如何生成链接呢？  
-> A：可以上传到 gitee，如果你的文件不值得上传 gitee，也就不值得使用 ppst 来管理了
+> A：可以上传到 gitee，如果你的文件不值得上传 gitee，也就不值得使用 ppst 来管理了  
 ![gitee原始文件](https://raw.githubusercontent.com/daGaiGuanYu/ppst/master/asset/gitee%E5%8E%9F%E5%A7%8B%E6%96%87%E4%BB%B6.jpg)
+
+> Q：我的文件不想传到公网，有没有文件私有的解决方案
+> A：目前没有，考虑以后添加。你也可以 pull 一个 request，我们一起建立更好用的 ppst
