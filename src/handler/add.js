@@ -1,4 +1,4 @@
-const { read, write } = require('./service/ppst.io')
+const { read, write } = require('../service/ppst.io')
 
 module.exports = function(){
   let filename = process.argv[3]

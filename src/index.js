@@ -6,11 +6,11 @@ const str = {
   version: '\nv' + getVersion()
 }
 const directiveMap = {
-  ls: require('./ls'),
-  add: require('./add'),
-  adds: require('./adds'),
-  p: require('./p'),
-  delete: require('./delete')
+  ls: require('./handler/ls'),
+  add: require('./handler/add'),
+  adds: require('./handler/adds'),
+  p: require('./handler/p'),
+  delete: require('./handler/delete')
 }
 
 function go(){
