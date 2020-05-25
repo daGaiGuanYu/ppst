@@ -30,7 +30,7 @@ class PstData{
       data = data[k]
     }
     if(data){
-      console.error('文件名重复了（已经有叫' + lastKey + '的文件了')
+      console.error(`文件名重复了（已经有叫${lastKey}的文件了)`)
       process.exit()
     }
     data[lastKey] = {

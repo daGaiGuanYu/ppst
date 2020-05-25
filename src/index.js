@@ -8,7 +8,7 @@ const str = {
 const directiveMap = {
   ls: require('./handler/ls'),
   add: require('./handler/add'),
-  adds: require('./handler/adds'),
+  'add-folder': require('./handler/add-folder'),
   p: require('./handler/p'),
   delete: require('./handler/delete')
 }
