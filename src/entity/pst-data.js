@@ -1,4 +1,5 @@
 //@ts-check
+const parseKeystring = require('../util/parse-keystring')
 
 class PstData{
   constructor(data){
@@ -29,7 +30,7 @@ class PstData{
         data[k] = {}
       data = data[k]
     }
-    if(data){
+    if(data[lastKey]){
       console.error(`文件名重复了（已经有叫${lastKey}的文件了)`)
       process.exit()
     }
@@ -45,12 +46,7 @@ function parseName(name){
     process.exit()
   }
   let [keys, filename] = name.split('/')
-  keys = keys.split('.')
-  for(let key of keys)
-    if(!key){
-      console.error('文件名格式有误')
-      process.exit()
-    }
+  keys = parseKeystring(keys)
   
   return { keys, filename }
 }
