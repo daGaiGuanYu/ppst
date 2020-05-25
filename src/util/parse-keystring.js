@@ -2,6 +2,7 @@
 
 /**
  * @param {string} keyString
+ * @returns {Array}
  */
 module.exports = function(keyString){
   if(!keyString){

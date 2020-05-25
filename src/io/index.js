@@ -25,6 +25,13 @@ function add(name, link){
   addData(name, link, getData())
 }
 
+/**
+ * @param {Array<String>} keys 
+ */
+function drop(keys){
+  console.log('还没搞呢')
+}
+
 module.exports = {
-  getData, add, save
+  getData, add, save, drop
 }
