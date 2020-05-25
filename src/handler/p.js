@@ -1,7 +1,8 @@
+// @ts-check
 const FS = require('fs')
-
-const { read } = require('../service/io')
 const axios = require('axios')
+
+const io = require('../io/index')
 
 module.exports = function(){
   const key = process.argv[3]

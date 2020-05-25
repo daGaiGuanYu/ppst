@@ -1,4 +1,5 @@
-const { read, write } = require('../service/io')
+// @ts-check
+const io = require('../io/index')
 const parseKeystring = require('../util/parse-keystring')
 
 module.exports = function(){
