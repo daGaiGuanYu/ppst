@@ -1,6 +1,6 @@
 const FS = require('fs')
 
-const { read } = require('../service/ppst.io')
+const { read } = require('../service/io')
 const axios = require('axios')
 
 module.exports = function(){

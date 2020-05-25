@@ -1,4 +1,4 @@
-const { read } = require('../service/ppst.io')
+const { read } = require('../service/io')
 
 module.exports = function(){
   const namespace = process.argv[3] || ''
