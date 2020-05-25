@@ -29,9 +29,13 @@ class PstData{
         data[k] = {}
       data = data[k]
     }
-    // TODO
-    data.filename = filename
-    data.link = link
+    if(data){
+      console.error('文件名重复了（已经有叫' + lastKey + '的文件了')
+      process.exit()
+    }
+    data[lastKey] = {
+      filename, link
+    }
   }
 }
 
