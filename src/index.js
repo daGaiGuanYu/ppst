@@ -10,7 +10,8 @@ const directiveMap = {
   add: require('./handler/add'),
   'add-folder': require('./handler/add-folder'),
   p: require('./handler/p'),
-  delete: require('./handler/drop')
+  delete: require('./handler/drop'),
+  'delete-folder': require('./handler/delete-folder')
 }
 
 function go(){

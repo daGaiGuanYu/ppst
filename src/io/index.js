@@ -29,7 +29,7 @@ function add(name, link){
  * @param {Array<String>} keys 
  */
 function drop(keys){
-  console.log('还没搞呢')
+  require('./drop')(keys, getData())
 }
 
 module.exports = {

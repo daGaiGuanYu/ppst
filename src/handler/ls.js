@@ -18,8 +18,10 @@ module.exports = function(){
   while(k = keys.shift()){
     if(all[k])
       all = all[k]
-    else
-      throw Error('未找到' + filename)
+    else{
+      console.error('未找到' + filename)
+      process.exit()
+    }
   }
   console.log(all)
 }
