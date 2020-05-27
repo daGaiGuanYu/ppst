@@ -6,7 +6,7 @@
 ppst add vue https://cn.vuejs.org/js/vue.js
 ```
 那么文件名是 vue，而下载好之后的文件的名字是 vue.js（取自下载链接最后一段路径）  
-为了区分，我们把**下载好之后的文件的名字叫做“下载文件的名”
+为了区分，我们把**下载好之后的文件的名字叫做“下载文件的名”**
 
 # 添加文件
 ##### 基本操作
@@ -20,6 +20,7 @@ ppst add vue https://cn.vuejs.org/js/vue.js
 ```bash
 ppst add vue/vue.haha https://cn.vuejs.org/js/vue.js
 ```
+这样，下载文件的名就是 vue.haha 了
 
 ##### 带上文件夹
 文件多了之后，就乱，有了“文件夹”之后，能一定程度缓解一下
@@ -69,7 +70,7 @@ ppst delete lib.vue
 
 # 配置文件
 配置文件记录了你添加了哪些文件  
-路径是：```~/.ppst.json```  
+存放在：```~/.ppst.json```  
 如果你需要换电脑，可以把这个文件直接复制到新电脑的家目录下
 
 # 未来的规划
