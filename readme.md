@@ -43,7 +43,7 @@ ppst p 百度首页的html文件
 
 > Q：我的文件在本地，如何生成链接呢？  
 > A：可以上传到 gitee，如果你的文件不值得上传 gitee，也就不值得使用 ppst 来管理了  
-![gitee原始文件](https://raw.githubusercontent.com/daGaiGuanYu/ppst/master/asset/gitee-demo.jpg)
+![gitee原始文件](https://gitee.com/dggy/picpic/raw/master/gitee-demo.jpg)
 
 > Q：我的文件不想传到公网，有没有文件私有的解决方案
 > A：目前没有，考虑以后添加。你也可以 pull 一个 request，我们一起建立更好用的 ppst
