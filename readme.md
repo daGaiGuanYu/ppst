@@ -32,7 +32,7 @@ ppst p 百度首页的html文件
 
 这样，百度首页的html文件就会下载到**当前目录**下
 
-更详细的操作，请看[这里]()
+更详细的操作，请看[这里](https://github.com/daGaiGuanYu/ppst/blob/master/doc/readme.md)
 
 # 一些建议
 + 每个人的技术领域都不一样，你应该、也值得拥有一个自己的模板仓库，只需要注册一个 gitee 或者 github 就可以了
