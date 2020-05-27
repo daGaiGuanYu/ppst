@@ -1,33 +1,41 @@
 // @ts-check
 const FS = require('fs')
-const axios = require('axios')
 
+const parseKeystring = require('../util/parse-keystring')
 const io = require('../io/index')
+const download = require('../service/download')
 
 module.exports = function(){
-  const key = process.argv[3]
-  if(!key){
+  const name = process.argv[3]
+  if(!name){
     console.error('你要下载哪个文件，写在 p 后面')
     return
   }
+  const [keyString, filename] = name.split('/')
+  const keys = parseKeystring(keyString)
+  const key = keys[keys.length - 1]
 
-  const all = read()
-  const link = all[key]
-  
-  if(!link){
-    console.error('你好像还没添加过这个文件：' + key)
-    return
-  }
+  const all = io.getData()
+  const target = getTarget(all, keys)
 
-  axios(link).then( res => {
-    FS.writeFileSync(getFilename(link), res.data)
-    console.log('ok')
-  }).catch( e => {
-    console.error(`链接检查一下（需要正经的 http 链接）？${link}？检查一下你的电脑还有网吗？`)
-  })
+  download(target, key, filename)
 }
 
-function getFilename(link){
-  let arr = link.split('/')
-  return arr[arr.length-1]||'未命名的文件'
+function getTarget(all, keys){
+  let lastKey = keys.pop()
+  let k
+  while(k = keys.shift())
+    if(!all[k])
+      notFound()
+    else
+      all = all[k]
+
+  if(all[lastKey])
+    return all[lastKey]
+  notFound()
+
+  function notFound(){
+    console.error('未找到目标文件')
+    process.exit()
+  }
 }
