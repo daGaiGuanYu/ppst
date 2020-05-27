@@ -18,6 +18,11 @@ module.exports = function(){
   const all = io.getData()
   const target = getTarget(all, keys)
 
+  if(target.constructor == String){
+    console.error('末尾不需要 .link 哦')
+    process.exit()
+  }
+  
   download(target, key, filename)
 }
 

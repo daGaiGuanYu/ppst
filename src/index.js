@@ -14,19 +14,15 @@ const directiveMap = {
   'delete-folder': require('./handler/delete-folder')
 }
 
-function go(){
-  let directive = process.argv[2]
-  if(!directive){
-    console.log('你好我是 ppst，一个模版文件管理工具' + str.page + str.version)
-    return
-  }
-
-  let task = directiveMap[directive]
-  if(!task){
-    console.log('未知的命令：' + directive + str.page + str.version)
-    return
-  }
-  task()
+let directive = process.argv[2]
+if(!directive){
+  console.log('你好我是 ppst，一个模版文件管理工具' + str.page + str.version)
+  return
 }
 
-go()
+let task = directiveMap[directive]
+if(!task){
+  console.log('未知的命令：' + directive + str.page + str.version)
+  return
+}
+task()
