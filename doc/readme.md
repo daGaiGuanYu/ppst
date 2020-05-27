@@ -1,4 +1,4 @@
-如果你不了解 ppst 请先看看[简介]()
+如果你不了解 ppst 请先看看[简介](https://github.com/daGaiGuanYu/ppst/blob/master/readme.md)
 
 # 区分一下“文件名”与“下载的文件的名字”
 例如你这样添加了一个文件：
