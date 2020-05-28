@@ -1,10 +1,10 @@
 // @ts-check
 const FS = require('fs')
 const Path = require('path')
-const axios = require('axios').default
 
 const currentPath = process.cwd() // current working directory
 const pathStack = [currentPath]
+const dhttp = require('./download-http')
 
 module.exports = function d(target, key, name){
   if(!target) // 什么也不是
@@ -27,12 +27,9 @@ function dFile(target, name){
   let filename = name||target.filename||getFilenameFromLink(target.link)
   let filePath = getFilepath(path, filename)
   
-  axios(target.link)
-    .then( res => {
-      FS.writeFileSync(filePath, res.data)
-      console.log('下载成功 +1')
-    })
-    .catch( e => console.error('下载错误 +1') )
+  dhttp(target.link, filePath)
+    .then( () => console.log('下载成功 +1') )
+    .catch( () => console.error('下载错误 +1') )
 }
 
 function getFilenameFromLink(link){
