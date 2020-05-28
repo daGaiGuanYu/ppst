@@ -21,6 +21,7 @@ module.exports = function d(target, key, name){
 
 function dFile(target, name){
   let path = Path.join(...pathStack)
+  console.log(path)
   if(!FS.existsSync(path))
     FS.mkdirSync(path, { recursive: true })
 
