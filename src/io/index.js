@@ -1,3 +1,5 @@
+// @ts-check
+
 const read = require('./read')
 const addData = require('./add')
 const FS = require('fs')
@@ -14,7 +16,7 @@ function getData(){
 }
 
 function save(){
-  FS.writeFileSync(filePath, JSON.stringify(data))
+  FS.writeFileSync(filePath, JSON.stringify(data, null, 2))
 }
 
 /**
