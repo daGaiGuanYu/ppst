@@ -77,4 +77,4 @@ ppst delete lib.vue
 + 更新（重点重点重点！！！），即 ```ppst update``` 命令
 + 交互式
 + 文件下载结果更人性化
-+ 文件夹管理
++ 文件夹管理（gitee 或者 github 上的某文件夹）
