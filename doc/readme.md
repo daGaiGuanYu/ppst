@@ -30,6 +30,8 @@ ppst add lib.jq https://code.jquery.com/jquery-3.5.1.js
 ```
 这样，就添加了两个文件，一个 vue，一个 jq，并且他们都在 lib “文件夹”下面
 
+> 相信我，你常用的模板文件不会很多，所以，不要为了分类，而把路径搞得很深
+
 ##### 自定义下载文件名 且 带上文件夹
 ```bash
 ppst add lib.vue/vue.haha https://cn.vuejs.org/js/vue.js
